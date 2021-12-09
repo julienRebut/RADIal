@@ -54,9 +54,9 @@ Labels for vehicles are stored in a separated csv file. Each label containg the 
 
 Note that -1 in all field means a frame without any label.
 
-Labels for the Free-driving-space is provided as a segmnettaion mask saved in a png file.
+Labels for the Free-driving-space is provided as a segmentaion mask saved in a png file.
 
-# Download
+# Download instructions
 ```
 $ wget https://www.dropbox.com/s/ubbwvdyskrkv7dn/RADIal_extract.zip?dl=0
 ```
