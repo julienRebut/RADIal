@@ -3,7 +3,7 @@
 </p>
 
 # Latest news:
-RADIal released date is **2022, January 28th**. We are currently working on the data anonymization.
+RADIal will be released on **2022, January 28th**. We are currently working on the data anonymization.
 However, we provide now the dataset version used in 'citation du papier' saved as a zip file (see the download section). 
 
 # RADIal dataset
