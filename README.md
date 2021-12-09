@@ -2,6 +2,9 @@
   <img src="images/RADIal_teaser.png">
 </p>
 
+# Latest news:
+RADIal released date is **2022, January 28th**. We are currently working on the data anonymization.
+However, we provide now the dataset version used in 'citation du papier' saved as a zip file. 
 
 # RADIal dataset
 RADIal stands for “Radar,  Lidar et  al.” It's a collection of 2-hour of raw  data  from  synchronized  automotive-grade  sensors (camera,  laser,  High Definition  radar)  in  various  environments  (citystreet,  highway,  countryside  road) and comes with GPS and vehicle’s CAN traces.
