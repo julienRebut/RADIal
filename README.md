@@ -15,7 +15,7 @@ RADIal contains 91 sequences of 1 to 4 minutes in duration, for a total of 2 hou
 ![Screenshot](images/vehicle.png)
 Central  to  the RADIal  dataset,   our  high-definition  radar  is  composed  of NRx=16 receiving antennas and NTx= 12 transmitting antennas, leading to NRx·NTx= 192 virtual antennas. This virtual-antenna array enables reaching a high azimuth angular resolution while estimating objects’ elevation angles as well. As the radar signal is difficult to interpret by annotators and practitioners alike, a 16-layer automotive-grade laser scanner (LiDAR) and a 5 Mpix RGB camera are also provided. The  camera  is  placed  below  the  interior  mirror behind the windshield while the radar and the LiDAR are installed in the middle of the front ventilation grid, one above the other. The three sensors have parallel horizontallines of sight, pointing in the driving direction. Their extrinsic parameters are provided together with the dataset.  RADIal also offers synchronized GPS and CAN traces which give access to the geo-referenced position of the vehicle as well as its driving information such as speed, steering wheelangle and yaw rate. The sensors’ specifications are detailed in the table below.
 
-<img src="images/Sensor_Specs.png" width="460" height="260" align="center">
+<img align="center" src="images/Sensor_Specs.png" width="460" height="260" >
 
 # Labels
 Out of the 25,000 synchronized frames, 8,252 frames are labelled.
