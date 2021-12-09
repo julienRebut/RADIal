@@ -1,4 +1,6 @@
-![Screenshot](images/RADIal_teaser.png)
+<p align="center">
+  <img src="images/RADIal_teaser.png">
+</p>
 
 
 # RADIal dataset
@@ -8,11 +10,14 @@ mettre un gif
 
 RADIal contains 91 sequences of 1 to 4 minutes in duration, for a total of 2 hours. These sequences are categorized in highway, country-side and city driving. The distribution of the sequences is indicated in the figure below. Each  sequence  contains raw  sensor signals recorded  with their native frame rate. There are approximately 25,000 frames with the three sensors synchronized, out of which 8,252 are labelled with a total of 9,550 vehicles.
 
-<img src="images/RADIal_statistics.png" width="360" height="320" align="center">
-
+<p align="center">
+  <img src="images/RADIal_statistics.png" width="360" height="320">
+</p>
 
 # Sensor  specifications
-![Screenshot](images/vehicle.png)
+<p align="center">
+  <img src="images/vehicle.png">
+</p>
 Central  to  the RADIal  dataset,   our  high-definition  radar  is  composed  of NRx=16 receiving antennas and NTx= 12 transmitting antennas, leading to NRx·NTx= 192 virtual antennas. This virtual-antenna array enables reaching a high azimuth angular resolution while estimating objects’ elevation angles as well. As the radar signal is difficult to interpret by annotators and practitioners alike, a 16-layer automotive-grade laser scanner (LiDAR) and a 5 Mpix RGB camera are also provided. The  camera  is  placed  below  the  interior  mirror behind the windshield while the radar and the LiDAR are installed in the middle of the front ventilation grid, one above the other. The three sensors have parallel horizontallines of sight, pointing in the driving direction. Their extrinsic parameters are provided together with the dataset.  RADIal also offers synchronized GPS and CAN traces which give access to the geo-referenced position of the vehicle as well as its driving information such as speed, steering wheelangle and yaw rate. The sensors’ specifications are detailed in the table below.
 
 <p align="center">
