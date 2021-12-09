@@ -51,9 +51,7 @@ Labels for vehicles are stored in a separated csv file. Each label containg the 
 
 Note that -1 in all field means a frame without any label.
 
-![image](https://user-images.githubusercontent.com/35976902/145424974-ced48a98-8e4f-4d23-9601-505d3a3cf511.png)
-
-Labels for the Free-driving-space is provided as a segmnettaion mask saved a a png file.
+Labels for the Free-driving-space is provided as a segmnettaion mask saved in a png file.
 
 # Get the data
 ```
