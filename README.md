@@ -25,10 +25,35 @@ Central  to  the RADIal  dataset,   our  high-definition  radar  is  composed  o
   <img src="images/Sensor_Specs.png" width="460" height="260" >
 </p>
 
+# Dataset structure
+RADIal is a unique folder containing all the recorded sequences. Each sequence is a folder containing:
+* A preview video of the scene (low resolution);
+* The camera data compressed in MJPEG format;
+* The Laser Scanner point cloud data saved in a binary file;
+* The ADC radar data saved in a binary file. There are 4 files in total, one file for each radar chip, each chip containing 4 Rx antennas;
+* The GPS data saved in ASCII format
+* The CAN traces of the vehicle saved in binary format
+* And finally, a log file that provides the timestamp of each individual sensor event.
+
+We provide in a separated repository a python library [DBReader](https://pages.github.com/) to read the data.
+Because all the radar data are recorded in a RAW format, that is to say the signal after the Analog to Digital Conversion (ADC), we provided too an optimized python library [HDR_SignalProcessing](https://pages.github.com/) to process the Radar signal and generate either the Power Spectrums, the Point Cloud or the Range-Azimuth map.
+
 # Labels
 Out of the 25,000 synchronized frames, 8,252 frames are labelled.
-Labels for vehicles are provided as 4D points coordinates (x,y,z,v).
-Labels for the Free-driving-space is provided as a segmnettaion mask.
+Labels for vehicles are stored in a separated csv file. Each label containg the following information:
+* numSample: number of the current synchronized sample between all the sensors. That is to say, this label can be projected in each individual sensor with a common dataset_index	value. Note that there might be more than one line with the same numSample, one line per label;
+* [x1_pix, y1_pix, x2_pix, y2_pix]: 2D coordinates of the vehicle' bouding boxes in the camera coordinates;
+* [laser_X_m, laser_Y_m, laser_Z_m]: 3D coordinates of the vehicle in the laser scanner coordinates system. Note that this 3D point is the middle of either the back or front visible face of the vehicle;
+* [radar_X_m, radar_Y_m, radar_R_m, radar_A_deg, radar_D, radar_P_db]: 2D coordinates (bird' eyes view) of the vehicle in the radar coordinates system either in cartesian (X,Y) or polar (R,A) coordinates. radar_D is the Doppler value and radar_P_db is the power of the reflected signal;
+* dataset: name of sequence it belongs to;
+* dataset_index: frame index in the current sequence;
+* Difficult: either 0 or 1
+
+Note that -1 in all field means a frame without any label.
+
+![image](https://user-images.githubusercontent.com/35976902/145424974-ced48a98-8e4f-4d23-9601-505d3a3cf511.png)
+
+Labels for the Free-driving-space is provided as a segmnettaion mask saved a a png file.
 
 # Get the data
 ```
