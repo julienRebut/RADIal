@@ -8,7 +8,7 @@ mettre un gif
 
 RADIal contains 91 sequences of 1 to 4 minutes in duration, for a total of 2 hours. These sequences are categorized in highway, country-side and city driving. The distribution of the sequences is indicated in the figure below. Each  sequence  contains raw  sensor signals recorded  with their native frame rate. There are approximately 25,000 frames with the three sensors synchronized, out of which 8,252 are labelled with a total of 9,550 vehicles.
 
-<img src="images/RADIal_statistics.png" width="400" height="790">
+<img src="images/RADIal_statistics.png" width="360" height="320">
 
 # Sensor  specifications
 ![Screenshot](images/vehicle.png)
