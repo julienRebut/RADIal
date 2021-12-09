@@ -31,7 +31,9 @@ Labels for vehicles are provided as 4D points coordinates (x,y,z,v).
 Labels for the Free-driving-space is provided as a segmnettaion mask.
 
 # Get the data
+```
 $ wget https://www.dropbox.com/s/ubbwvdyskrkv7dn/RADIal_extract.zip?dl=0
+```
 
 # Citation
 
